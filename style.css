@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #eeeeee;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+h1{
+    margin-bottom: 0px;
+    text-align: center;
+}
+small{
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.fa-heart{
+    color: red;
+}
+/* loveme class */
+.loveMe{
+    height: 300px;
+    width: 300px;
+    background: url('https://plus.unsplash.com/premium_photo-1721984765144-89b17ff1b79f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D')
+    no-repeat center center/cover;
+    margin: auto;
+    cursor: pointer;
+    max-width: 100%;
+    position: relative;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.loveMe .fa-heart{
+    position: absolute;
+    animation: grow 1s linear;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow{
+    to{
+        transform: translate(-50%,-50%) scale(10);
+        opacity: 0.5;
+    }
+}
